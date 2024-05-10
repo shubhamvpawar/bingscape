@@ -19,10 +19,6 @@ const Body = () => {
             path: "/browse",
             element: <Browse />
         },
-        // {
-        //     path: "/",
-        //     element: <Body />
-        // },
     ])
 
     // useEffect(() => {
