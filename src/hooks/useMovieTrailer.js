@@ -22,6 +22,7 @@ const useMovirTrailer = (movieId) => {
 
     useEffect(() => {
         !trailerVideo && getMoviesVideos();
+        // getMoviesVideos();
     }, [])
 };
 
