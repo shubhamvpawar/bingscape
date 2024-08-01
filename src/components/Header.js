@@ -4,7 +4,7 @@ import { auth } from '../utils/firebase';
 import { useNavigate } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
 import { addUser, removeUser } from '../utils/userSlice';
-import { LOGO, SUPPORTED_LANGUAGES } from '../utils/constants';
+import { SUPPORTED_LANGUAGES } from '../utils/constants';
 import { toggleGptSearchView } from '../utils/gptSlice';
 import { changeLanguage } from '../utils/configSlice';
 import BingScape from "../img/BingScape.png"
@@ -66,13 +66,13 @@ const Header = () => {
                         onChange={handleLanguageChange}>
                         {SUPPORTED_LANGUAGES.map((lang) => <option key={lang.identifier} value={lang.identifier}>{lang.name}</option>)}
                     </select>}
-                    {/* <button
-                        className='px-4 py-2 mx-2 my-2 text-white bg-purple-600 rounded-md'
+                    <button
+                        className='px-4 py-1 mx-2 my-1 text-white hover:scale-90 rounded-lg bg-transparent'
                         onClick={handleGptSearchClick}
-                    >{showGptSearch ? "Home" : "GPT Search"}</button> */}
+                    >{showGptSearch ? "Home" : "Search"}</button>
                     <button
                         onClick={handleSignOut}
-                        className="bg-red-500 text-white rounded-lg px-3 py-1 mx-auto my-2 md:font-semibold">Sign Out</button>
+                        className="bg-transparent text-red-600 hover:scale-90 rounded-lg px-3 py-1 mx-auto my-1 md:font-semibold bg-opacity-80">Sign Out</button>
                 </div>
             )}
         </div>

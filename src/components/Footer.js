@@ -11,14 +11,14 @@ const Footer = () => {
                     <a
                         className='hover:scale-90 hover:font-semibold'
                         href="https://www.linkedin.com/in/shubham-dev-design/"
-                        target="_blank"
+                        target="_blank" rel="noreferrer"
                     >LinkedIN</a>
                 </div>
                 <div className='flex w-1/2 justify-start pl-2'>
                     <a
                         className='hover:scale-90 hover:font-semibold'
                         href="https://github.com/shubhamvpawar/bingscape"
-                        target="_blank"
+                        target="_blank" rel="noreferrer"
                     >GitHub</a></div>
             </div>
         </div>

@@ -10,7 +10,6 @@ const Login = () => {
 
     const [isSignInForm, setIsSignInForm] = useState(true);
     const [errorMessage, setErrorMessage] = useState(null);
-
     // const navigate = useNavigate();
 
     // const name = useRef(null);
@@ -34,6 +33,7 @@ const Login = () => {
 
         if (message) return;
         //If message present then return
+
         //Sign In / Sign Up
         if (!isSignInForm) {
             //Sign Up Logic
@@ -41,7 +41,7 @@ const Login = () => {
                 .then((userCredential) => {
                     // Signed up 
                     const user = userCredential.user;
-                    console.log(user);
+                    // console.log(user);
                     // navigate("/browse")
                 })
                 .catch((error) => {

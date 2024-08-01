@@ -28,15 +28,7 @@ const Browse = () => {
                 </>
             )}
             <Footer />
-            {/* <MainContainer />
-            <SecondaryContainer /> */}
-            {/* 
-        Main Section
-                playing
-                title
-        Sec section
-        list
-            many cards */}
+
         </div>
     )
 }
